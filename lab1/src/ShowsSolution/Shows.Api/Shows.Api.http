@@ -1,6 +1,41 @@
-@Shows.Api_HostAddress = http://localhost:5114
+@Shows.Api_HostAddress = http://localhost:1338
 
-GET {{Shows.Api_HostAddress}}/weatherforecast/
+POST {{Shows.Api_HostAddress}}/api/shows}
 Accept: application/json
+content-type: application/json
+
+{
+
+"description": "A show about nothing",
+"name": "Seinfeld",
+"streamingService": "Netflix"
+
+}
 
 ###
+
+
+# @SoftwareCenter.Api_HostAddress = http://localhost:1337
+
+# POST {{SoftwareCenter.Api_HostAddress}}/vendors
+# Accept: application/json
+# Content-type: application/json
+
+# {
+
+# "url": "https://docker.com",
+# "pointOfContact": {
+#     "name": "Silvio",
+#     "email": "silvio@jbrain.com",
+#     "phone": "800 Write-Code"
+# }
+# }
+
+
+
+
+# GET {{SoftwareCenter.Api_HostAddress}}/vendors/e506c810-taco-salad
+
+
+
+# GET {{SoftwareCenter.Api_HostAddress}}/vendors/
